@@ -1,9 +1,88 @@
-HELP.md
-.gradle
+# Created by http://gitignore.io
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+### Linux ###
+.*
+!.gitignore
+!.git*
+*~
+
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+### Java ###
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+### Gradle ###
+# Exclude Folder List #
+.gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+!**/src/main/**
+!**/src/test/**
+
+
+
+### Eclipse ###
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+### IntelliJ ###
+*.iml
+*.ipr
+*.iws
+.idea/
 
 ### STS ###
 .apt_generated
@@ -13,18 +92,6 @@ build/
 .settings
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
 ### NetBeans ###
 /nbproject/private/
@@ -35,3 +102,23 @@ out/
 
 ### VS Code ###
 .vscode/
+
+
+### SVN ###
+.svn/
+
+### Maven ###
+target/
+
+/bin
+
+#application-local.properties file is ignored. Please create first time and for data, refer application-local-sample.properties
+src/main/resources/application-local.properties
+
+#application.properties file is ignored. Please create first time and for data, refer application-sample.properties
+src/main/resources/application.properties
+
+#constants-local.properties file is ignored. Please create first time and for data, refer constant-local-sample.properties
+src/main/resources/constant/constantEnv.properties
+
+

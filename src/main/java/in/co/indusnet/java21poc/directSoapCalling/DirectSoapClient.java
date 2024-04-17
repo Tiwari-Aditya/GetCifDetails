@@ -36,8 +36,7 @@ public class DirectSoapClient {
             con.setRequestProperty("Pragma", "no-cache");
             con.setRequestProperty("SOAPAction", soapAction);
             con.setRequestProperty("Content-length", "" + soapRequest.length());
-            con.setRequestProperty("X-IBM-Client-Id", "2b12177f-6663-4155-b47b-859e7e238f3a");
-            con.setRequestProperty("X-IBM-Client-Secret", "D8fY4dX8vA8qQ7sJ0aM0bL4yO5aA3sY1qY1mF1yJ6bW5wL7pJ1");
+
 
             con.setDoOutput(true);
             DataOutputStream wr = new DataOutputStream(con.getOutputStream());
